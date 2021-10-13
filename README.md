@@ -61,16 +61,24 @@ Data reflects seed data...
 
 <kbd>
 
-Home Page (left) | Dashboard/Stats Page (right)
+Home Page
 
-![](/public/assets/img/homepage.png) | ![](/public/assets/img/dashboard.png)
+![](/public/assets/img/homepage.png)
+
+Dashboard/Stats Page
+
+![](/public/assets/img/dashboard.png)
 
 Continue or Add an Exercise to a Workout:
 
 ![](/public/assets/img/continue_add_exercise.png)
 
-Add Cardio (left) | Add Resistance (right)
+Add Cardio
 
-![](/public/assets/img/add_cardio.png) | ![](/public/assets/img/add_resistance.png)
+![](/public/assets/img/add_cardio.png)
+
+Add Resistance
+
+![](/public/assets/img/add_resistance.png)
 
 </kbd>
