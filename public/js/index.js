@@ -1,5 +1,7 @@
+// call the function
 init();
 
+// function to initialize (get the last workout by id)
 async function init() {
   if (location.search.split("=")[1] === undefined) {
     const workout = await API.getLastWorkout();
@@ -10,4 +12,3 @@ async function init() {
     }
   }
 }
-

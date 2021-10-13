@@ -1,3 +1,4 @@
+// API functions to grab the last workout, add an exercise, create a workout, get workouts in range (seven days)
 const API = {
   async getLastWorkout() {
     let res;

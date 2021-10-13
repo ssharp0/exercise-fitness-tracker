@@ -1,3 +1,4 @@
+// assign variables for query selectors for reference
 const workoutTypeSelect = document.querySelector("#type");
 const cardioForm = document.querySelector(".cardio-form");
 const resistanceForm = document.querySelector(".resistance-form");
@@ -17,6 +18,7 @@ const newWorkout = document.querySelector(".new-workout")
 let workoutType = null;
 let shouldNavigateAway = false;
 
+// function to initialize exercise
 async function initExercise() {
   let workout;
 
@@ -30,6 +32,7 @@ async function initExercise() {
 
 }
 
+// initialize exercise
 initExercise();
 
 function handleWorkoutTypeChange(event) {
@@ -49,6 +52,7 @@ function handleWorkoutTypeChange(event) {
   validateInputs();
 }
 
+// function to validate inputs (for entry on resistance and cardio exercises)
 function validateInputs() {
   let isValid = true;
 
@@ -95,6 +99,7 @@ function validateInputs() {
   }
 }
 
+// function to handle the submit (submit exercise)
 async function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -119,6 +124,7 @@ async function handleFormSubmit(event) {
   toast.classList.add("success");
 }
 
+// function to handle the toas animation (show success added)
 function handleToastAnimationEnd() {
   toast.removeAttribute("class");
   if (shouldNavigateAway) {
@@ -126,6 +132,7 @@ function handleToastAnimationEnd() {
   }
 }
 
+// function to clear inputs (to that user can have empty fields for input)
 function clearInputs() {
   cardioNameInput.value = "";
   nameInput.value = "";

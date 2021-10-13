@@ -1,3 +1,4 @@
+// function to calculate the total weight (from the datbase data) - total weight from resistance exercises
 function calculateTotalWeight(data) {
   const totals = [];
 
@@ -15,6 +16,7 @@ function calculateTotalWeight(data) {
   return totals;
 }
 
+// function to populate line and bar charts
 function populateChart(data) {
   console.log(data)
   const durations = data.map(({ totalDuration }) => totalDuration);
@@ -35,7 +37,7 @@ function populateChart(data) {
       day: 'numeric',
     }).format(date);
   });
-
+  // line chart for the workout duration in mintues
   let lineChart = new Chart(line, {
     type: 'line',
     data: {
@@ -63,7 +65,7 @@ function populateChart(data) {
       },
     },
   });
-
+  // bar chart for the weights
   let barChart = new Chart(bar, {
     type: 'bar',
     data: {

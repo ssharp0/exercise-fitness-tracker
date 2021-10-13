@@ -1,3 +1,4 @@
+// function to initialize the workout
 async function initWorkout() {
   const lastWorkout = await API.getLastWorkout();
   console.log("Last workout:", lastWorkout);
@@ -19,6 +20,7 @@ async function initWorkout() {
   }
 }
 
+// function to tally/count the exercises for the totals
 function tallyExercises(exercises) {
   const tallied = exercises.reduce((acc, curr) => {
     if (curr.type === "resistance") {
@@ -33,6 +35,7 @@ function tallyExercises(exercises) {
   return tallied;
 }
 
+// function to format the date
 function formatDate(date) {
   const options = {
     weekday: "long",
@@ -44,6 +47,7 @@ function formatDate(date) {
   return new Date(date).toLocaleDateString(options);
 }
 
+// function to render the workout stats summary
 function renderWorkoutSummary(summary) {
   const container = document.querySelector(".workout-stats");
 
@@ -71,6 +75,7 @@ function renderWorkoutSummary(summary) {
   });
 }
 
+// function to render the no workout text to let user know no workout has been created
 function renderNoWorkoutText() {
   const container = document.querySelector(".workout-stats");
   const p = document.createElement("p");
@@ -81,4 +86,5 @@ function renderNoWorkoutText() {
   container.appendChild(p);
 }
 
+// call the initalize workout function
 initWorkout();
