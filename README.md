@@ -13,7 +13,7 @@ Exercise fitness tracker using mongoDB and Mongoose schema with Express.js routi
 
 <br>
 
-### [Heroku Deployed Demo Link]()
+### [Heroku Deployed Demo Link](https://exercise-fitness-tracker-s01.herokuapp.com/)
 
 ### [Github Repo](https://github.com/ssharp0/exercise-fitness-tracker)
 
