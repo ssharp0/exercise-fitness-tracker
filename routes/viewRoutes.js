@@ -5,7 +5,7 @@ const router = require('express').Router()
 const { join } = require('path')
 
 // home route (catch all) response send file index.html
-router.get('/*', (req, res) => {
+router.get('/', (req, res) => {
  res.sendFile(join(__dirname, '../public/index.html'))
 })
 
